@@ -58,12 +58,12 @@ docker exec -it postgres_api psql -U postgres -d api_integration
 
 **Crie a tabela:**
 ```bash
-CREATE TABLE users (
-    id INT PRIMARY KEY,
-    name VARCHAR(150),
-    email VARCHAR(150),
-    active BOOLEAN
-);
+CREATE TABLE users ( ^
+    id INT PRIMARY KEY ^
+    name VARCHAR(150) ^
+    email VARCHAR(150) ^
+    active BOOLEAN ^
+); 
 ```
 
 **Verifique:**
