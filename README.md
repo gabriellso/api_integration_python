@@ -41,12 +41,14 @@ DB_PASSWORD=123456
 ⚠️ Observação: .env NÃO é commitado (está no .gitignore)
 
 ### **3. Suba o PostgreSQL com Docker**
+
+**CMD:**
 ```bash
-docker run --name postgres_api \
--e POSTGRES_PASSWORD=123456 \
--e POSTGRES_DB=api_integration \
--p 5432:5432 \
--d postgres:16
+docker run --name postgres_api ^
+-e POSTGRES_PASSWORD=123456 ^
+-e POSTGRES_DB=api_integration ^
+-p 5432:5432 ^
+-d postgres:16                                                              
 ```
 
 ### **4. Execute o projeto**
