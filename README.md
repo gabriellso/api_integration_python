@@ -28,7 +28,7 @@ pip install -r requirements.txt
 
 Crie um arquivo .env com:
 ```bash
-API_URL=https://jsonplaceholder.typicode.com/users
+API_URL=https://jsonplaceholder.typicode.com
 API_TOKEN=
 
 DB_HOST=localhost
