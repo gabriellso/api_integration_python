@@ -43,10 +43,10 @@ DB_PASSWORD=123456
 ### **3. Suba o PostgreSQL com Docker**
 ```bash
 docker run --name postgres_api \
-  -e POSTGRES_PASSWORD=123456 \
-  -e POSTGRES_DB=api_integration \
-  -p 5432:5432 \
-  -d postgres:16
+-e POSTGRES_PASSWORD=123456 \
+-e POSTGRES_DB=api_integration \
+-p 5432:5432 \
+-d postgres:16
 ```
 
 ### **4. Execute o projeto**
