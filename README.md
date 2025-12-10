@@ -27,7 +27,7 @@ pip install -r requirements.txt
 ### **2. Configure o arquivo .env**
 
 Crie um arquivo .env com:
-
+```bash
 API_URL=https://jsonplaceholder.typicode.com/users
 API_TOKEN=
 
@@ -36,25 +36,32 @@ DB_PORT=5432
 DB_NAME=api_integration
 DB_USER=postgres
 DB_PASSWORD=123456
+```
 
 ⚠️ Observação: .env NÃO é commitado (está no .gitignore)
 
 ### **3. Suba o PostgreSQL com Docker**
-
+```bash
 docker run --name postgres_api \
   -e POSTGRES_PASSWORD=123456 \
   -e POSTGRES_DB=api_integration \
   -p 5432:5432 \
   -d postgres:16
+```
 
 ### **4. Execute o projeto**
+```bash
 python main.py
-
+```
 
 ### **🧪 Testar o Banco**
 
 Acessar o banco dentro do container:
-    docker exec -it postgres_api psql -U postgres -d api_integration
+```bash
+docker exec -it postgres_api psql -U postgres -d api_integration
+```
 
 Listar usuários:
-    SELECT * FROM users;
+```bash
+SELECT * FROM users;
+```
