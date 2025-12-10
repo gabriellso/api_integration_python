@@ -1,4 +1,4 @@
-# 🚀 API Integration – Python + REST + PostgreSQL
+# API Integration – Python + REST + PostgreSQL
 
 Integração completa entre Python, API REST e banco de dados PostgreSQL (via Docker).  
 O projeto consome dados externos, normaliza o JSON e persiste as informações no banco.
@@ -7,12 +7,11 @@ O projeto consome dados externos, normaliza o JSON e persiste as informações n
 
 ## 📌 Funcionalidades
 
-- 🔗 Consumo de API REST (GET/POST)
-- 🔐 Autenticação via Token
-- 🧹 Tratamento e padronização de respostas JSON
-- 🗄️ Armazenamento no PostgreSQL usando `psycopg2`
-- 🧩 Estrutura profissional de módulos
-- 🐳 Banco totalmente isolado via Docker
+- Consumo de API REST (GET/POST)
+- Autenticação via Token
+- Tratamento e padronização de respostas JSON
+- Armazenamento no PostgreSQL usando `psycopg2`
+- Banco totalmente isolado via Docker
 
 ---
 
