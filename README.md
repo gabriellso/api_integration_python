@@ -75,7 +75,7 @@ CREATE TABLE users (
 python main.py
 ```
 
-### **🧪 Testar o Banco**
+### **Testar o Banco**
 
 **Entrar no container:**
 ```bash
