@@ -38,7 +38,7 @@ DB_USER=postgres
 DB_PASSWORD=123456
 ```
 
-⚠️ Observação: .env NÃO é commitado (está no .gitignore)
+*⚠️ Observação: .env NÃO é commitado (está no .gitignore)*
 
 ### **3. Suba o PostgreSQL com Docker**
 
@@ -58,12 +58,12 @@ docker exec -it postgres_api psql -U postgres -d api_integration
 
 **Crie a tabela:**
 ```bash
-CREATE TABLE users ( ^
+CREATE TABLE users (
     id INT PRIMARY KEY ^
-    name VARCHAR(150) ^
-    email VARCHAR(150) ^
-    active BOOLEAN ^
-); 
+    , name VARCHAR(150) ^
+    , email VARCHAR(150) ^
+    , active BOOLEAN
+);
 ```
 
 **Verifique:**
