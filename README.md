@@ -48,7 +48,7 @@ docker run --name postgres_api ^
 -e POSTGRES_PASSWORD=123456 ^
 -e POSTGRES_DB=api_integration ^
 -p 5432:5432 ^
--d postgres:16                                                              
+-d postgres:16
 ```
 
 ### **4. Crie a tabela no banco**
