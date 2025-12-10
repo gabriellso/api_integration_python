@@ -22,9 +22,9 @@ O projeto consome dados externos, normaliza o JSON e persiste as informações n
 
 ```bash
 pip install -r requirements.txt
-```bash
+```
 
-**2. Configure o arquivo .env**
+### **2. Configure o arquivo .env**
 
 Crie um arquivo .env com:
 
@@ -39,7 +39,7 @@ DB_PASSWORD=123456
 
 ⚠️ Observação: .env NÃO é commitado (está no .gitignore)
 
-**3. Suba o PostgreSQL com Docker**
+### **3. Suba o PostgreSQL com Docker**
 
 docker run --name postgres_api \
   -e POSTGRES_PASSWORD=123456 \
@@ -47,11 +47,11 @@ docker run --name postgres_api \
   -p 5432:5432 \
   -d postgres:16
 
-**4. Execute o projeto**
+### **4. Execute o projeto**
 python main.py
 
 
-**🧪 Testar o Banco**
+### **🧪 Testar o Banco**
 
 Acessar o banco dentro do container:
     docker exec -it postgres_api psql -U postgres -d api_integration
