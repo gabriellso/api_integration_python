@@ -42,7 +42,7 @@ DB_PASSWORD=123456
 
 ### **3. Suba o PostgreSQL com Docker**
 
-**CMD:**
+**Windows - CMD:**
 ```bash
 docker run --name postgres_api ^
 -e POSTGRES_PASSWORD=123456 ^
