@@ -51,19 +51,39 @@ docker run --name postgres_api ^
 -d postgres:16                                                              
 ```
 
-### **4. Execute o projeto**
+### **4. Crie a tabela no banco**
+```bash
+docker exec -it postgres_api psql -U postgres -d api_integration
+```
+
+**Crie a tabela:**
+```bash
+CREATE TABLE users (
+    id INT PRIMARY KEY,
+    name VARCHAR(150),
+    email VARCHAR(150),
+    active BOOLEAN
+);
+```
+
+**Verifique:**
+```bash
+\dt
+```
+
+### **5. Execute o projeto**
 ```bash
 python main.py
 ```
 
 ### **🧪 Testar o Banco**
 
-Acessar o banco dentro do container:
+**Entrar no container:**
 ```bash
 docker exec -it postgres_api psql -U postgres -d api_integration
 ```
 
-Listar usuários:
+**Listar usuários:**  
 ```bash
 SELECT * FROM users;
 ```
