@@ -38,7 +38,7 @@ DB_USER=postgres
 DB_PASSWORD=123456
 ```
 
-*⚠️ Observação: .env NÃO é commitado (está no .gitignore)*
+**⚠️ Observação: .env NÃO é commitado (está no .gitignore)**
 
 ### **3. Suba o PostgreSQL com Docker**
 
