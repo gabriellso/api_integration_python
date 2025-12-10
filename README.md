@@ -22,6 +22,7 @@ O projeto consome dados externos, normaliza o JSON e persiste as informações n
 
 ```bash
 pip install -r requirements.txt
+```bash
 
 **2. Configure o arquivo .env**
 
